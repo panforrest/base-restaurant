@@ -24,7 +24,16 @@ router.get('/', function(req, res){
     	description: 'This is a place for business meeting'
     }
 
-	res.render('index', data)
+    turbo.pageData('home')
+    .then(pageConfig => {
+        console.log(JSON.stringify(pageConfig))
+        res.render('index', data)
+    })
+    .catch(err=>{
+    	res.render('index', data)
+    })
+
+	// res.render('index', data)
 })
 
 module.exports = router
