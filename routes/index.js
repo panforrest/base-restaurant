@@ -8,7 +8,10 @@ const router = vertex.router()
 	information, view here: https://mustache.github.io/#demo */
 router.get('/', function(req, res){
     const env = {
-    	navLogo: process.env.NAV_LOGO
+    	navLogo: process.env.NAV_LOGO,
+    	facebook: process.env.FACEBOOK,
+    	instagram: process.env.INSTAGRAM,
+    	yelp: process.env.YELP
     }
 
     const data = {
