@@ -11,7 +11,10 @@ router.get('/', function(req, res){
     	navLogo: process.env.NAV_LOGO,
     	facebook: process.env.FACEBOOK,
     	instagram: process.env.INSTAGRAM,
-    	yelp: process.env.YELP
+    	yelp: process.env.YELP,
+    	name: process.env.NAME,
+    	address: process.env.ADDRESS,
+    	phone: process.env.PHONE
     }
 
     const data = {

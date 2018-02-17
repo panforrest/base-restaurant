@@ -2,14 +2,15 @@
 		<div class="container">
 			<div class="content-footer row">
 				<div class="column-footer col-lg-5 col-md-8 col-sm-7">
-					<h3>Contact information</h3>
+					<img src="{{env.navLogo}}">
+					<br /><br />
 					<ul>
-						<li>ADDRESS: 100 Tenth Avenue, New York City, NY 1001</li>
-						<li>FOR BOOKING: (044) 359 0173</li>
-						<li id="follow-us">FOLLOW US ON: 
-							<a target="_blank" href="https://www.facebook.com/{{env.facebook}}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-							<a arget="_blank" href="https://www.instagram.com/{{env.instagram}}"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-							<a target="_blank" href="https://www.yelp.com/biz/{{env.yelp}}"><i class="fa fa-yelp" aria-hidden="true"></i></a>
+						<li>{{ env.address }}</li>
+						<li>CATERING &amp; EVETNS: {{ env.phone }}</li>
+						<li id="follow-us"> 
+							<a style="padding-right:18px; padding-left:0px" target="_blank" href="https://www.facebook.com/{{env.facebook}}"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a style="padding-right:18px; padding-left:0px" arget="_blank" href="https://www.instagram.com/{{env.instagram}}"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+							<a style="padding-right:18px; padding-left:0px" target="_blank" href="https://www.yelp.com/biz/{{env.yelp}}"><i class="fa fa-yelp" aria-hidden="true"></i></a>
 						</li>
 					</ul>
 				</div>
@@ -75,7 +76,7 @@
 		<div class="wrap-bottom-footer">
 			<div class="container">
 				<div class="bottom-footer row justify-content-between">
-					<div class="col-12 col-sm-7">&copy; My Awesome Restaurant. All rights reserved.</div>
+					<div class="col-12 col-sm-7">&copy; {{ env.name }}. All rights reserved.</div>
 				</div>
 			</div>
 		</div>
