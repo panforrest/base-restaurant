@@ -36,14 +36,16 @@
                 },
  
                 arrows: {
-                    enable: true,
+                    // enable: true,
+                    enable: false,
                     style: 'hesperiden',
                     hide_onleave: true
 
                 },
  
                 bullets: {
-                    enable: true,
+                    // enable: true,
+                    enable: false,
                     style: 'uranus',
                     tmp: '<span class="tp-bullet-inner"></span>',
                     hide_onleave: false,
