@@ -26,7 +26,8 @@ router.get('/', function(req, res){
 
     turbo.pageData('home')
     .then(pageConfig => {
-        console.log(JSON.stringify(pageConfig))
+        // console.log(JSON.stringify(pageConfig))
+        data['page'] = pageConfig
         res.render('index', data)
     })
     .catch(err=>{
