@@ -7,7 +7,12 @@ const router = vertex.router()
 	Data is rendered using the Mustache templating engine. For more
 	information, view here: https://mustache.github.io/#demo */
 router.get('/', function(req, res){
+    const env = {
+    	navLogo: process.env.NAV_LOGO
+    }
+
     const data = {
+    	env: env,
     	cdn: process.env.TURBO_CDN,
     	greeting: 'Welcome to my restaurant',
     	description: 'This is a place for business meeting'
