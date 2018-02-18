@@ -29,6 +29,12 @@ router.get('/', function(req, res){
     .then(pageConfig => {
         // console.log(JSON.stringify(pageConfig))
         data['page'] = pageConfig
+        return turbo.fetch('post', null)
+        // res.render('index', data)
+    })
+    .then(posts => {
+        console.log('POSTS: ' + JSON.stringify(posts))
+
         res.render('index', data)
     })
     .catch(err=>{
