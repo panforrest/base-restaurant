@@ -14,7 +14,8 @@ router.get('/', function(req, res){
     	yelp: process.env.YELP,
     	name: process.env.NAME,
     	address: process.env.ADDRESS,
-    	phone: process.env.PHONE
+    	phone: process.env.PHONE,
+    	favIcon: process.env.FAVICON
     }
 
     const data = {
