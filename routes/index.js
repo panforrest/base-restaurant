@@ -34,7 +34,7 @@ router.get('/', function(req, res){
     })
     .then(posts => {
         console.log('POSTS: ' + JSON.stringify(posts))
-
+        data['posts'] = posts
         res.render('index', data)
     })
     .catch(err=>{
